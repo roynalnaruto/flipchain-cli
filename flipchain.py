@@ -38,7 +38,7 @@ def create(type, scope, amount):
     '''Create a table'''
     print 'create'
 
-@click.command()
+@cli.command()
 @click.option('--table', help='Unique code of table', required=True)
 @click.option('--amount', help='Initial amount to join table with', default=50)
 def join(table, amount):
